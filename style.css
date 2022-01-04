@@ -1,0 +1,119 @@
+:root {
+  --body: #f3d2c1;
+  --font-family: cascadia code;
+  --background-color: #55423d;
+  --font-color: #fff3ec;
+}
+body {
+  background-color: var(--body);
+  font-family: var(--font-family);
+  font-size: 17px;
+  line-height: 1.6;
+}
+.header > h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#modalBtn {
+  margin: 0 auto;
+  display: flex;
+  font-family: var(--font-family);
+}
+.button {
+  background-color: var(--background-color);
+  color: var(--font-color);
+  padding: 1em 2em;
+  border: 0;
+  font-size: 20px;
+}
+.button:hover {
+  background-color: gray;
+}
+#tableID {
+  margin-top: 1.875rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.table {
+  /* display: none; */
+  border-collapse: collapse;
+  width: 50%;
+  border: 2px solid #55423d;
+  background-color: #55423d;
+}
+.table > thead > tr > th {
+  color: var(--font-color);
+  font-size: 23px;
+  align-items: center;
+}
+#tableID > .table > tbody > tr {
+  color: var(--font-color);
+  font-size: 15px;
+  text-align: center;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.modalContent {
+  background-color: #f4f4f4;
+  margin: 10% auto;
+  width: 70%;
+  padding: 20px;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+}
+#innerForm > div > h1 {
+  text-align: center;
+}
+div#radioBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div#addButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.closeBtn {
+  color: #ccc;
+  font-size: 20px;
+  float: right;
+}
+.closeBtn:hover,
+.closeBtn:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+#addButton > button {
+  background-color: var(--background-color);
+  color: var(--font-color);
+  padding: 9px;
+  margin: 0 auto;
+  border: none;
+  font-size: 20px;
+  text-transform: capitalize;
+  border-radius: none;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+input[type="text"],
+input[type="number"] {
+  border-radius: 4px;
+  font-family: var(--font-family);
+  width: 35%;
+  margin-left: 270px;
+  margin-top: 5px;
+  padding: 10px;
+}

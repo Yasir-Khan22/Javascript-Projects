@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>simple modal</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- header 1 -->
+    <div class="header">
+      <h1>A Small Book Library</h1>
+    </div>
+
+    <!-- add book button  -->
+    <button id="modalBtn" class="button">Add New Book</button>
+    <!-- BOOKS TABLE  -->
+    <div id="tableID">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Pages</th>
+            <!-- <th>Status</th> -->
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <!-- <td></td> -->
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- modal  -->
+    <div id="simpleModal" class="modal">
+      <div class="modalContent">
+        <span class="closeBtn">&times;</span>
+
+        <!-- MODAL CONTAINER  -->
+        <div id="modal_container" class="model_container">
+          <form id="innerForm" class="innerForm">
+            <div>
+              <h1>New Book</h1>
+            </div>
+            <div>
+              <input type="text" id="title" placeholder="Title" />
+            </div>
+            <br />
+            <div>
+              <input type="text" id="author" placeholder="Author" />
+            </div>
+            <br />
+            <div>
+              <input type="number" id="number" placeholder="Pages" />
+            </div>
+            <br />
+            <!-- <div id="radioBtn">
+              Read Book?
+              <input type="checkbox" id="yes" name="Question" value="" />
+              <label for="haan" id="haan">Yes</label>
+            </div> -->
+            <div id="addButton">
+              <button onclick="winClose()">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
