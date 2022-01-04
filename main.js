@@ -6,6 +6,7 @@ var modalBtn = document.getElementById("modalBtn");
 var closeBtn = document.getElementsByClassName("closeBtn")[0];
 
 let btnAdd = document.querySelector("#addButton");
+
 let table = document.querySelector("table");
 // CLICK FUNCTINALITY
 modalBtn.addEventListener("click", openModal);
